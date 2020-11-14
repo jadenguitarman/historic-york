@@ -1,0 +1,60 @@
+#nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10px;
+	height: 10vh;
+	position: relative;
+	width: 100%;
+}
+
+#nav > svg {
+	height: 80%;
+	margin-right: 20%;
+}
+
+#nav > nav {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: var(--hy-mid-gray);
+	flex: 1;
+}
+
+@media (max-width: 800px) {
+	#nav > svg.hidden {
+		display: none;
+	}
+
+	#nav > nav {
+		position: absolute;
+		top: 0;
+		left: 100%;
+		transition: left 1s;
+		width: 100vw;
+	}
+
+	#nav > nav.open {
+		left: 0;
+	}
+
+	#nav > nav.open > svg {
+		display: none;
+	}
+}
+
+#nav > nav > svg {
+	fill: var(--hy-blue);
+	height: 100%;
+    max-height: 30px;
+    position: absolute;
+    right: calc(100% + 20px);
+	cursor: pointer;
+}
+
+#nav > nav > a {
+	font-family: "Raleway";
+    text-decoration: none;
+	text-transform: uppercase;
+}

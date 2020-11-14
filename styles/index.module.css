@@ -1,0 +1,106 @@
+.main {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.main > section {
+	width: 100%;
+}
+
+#intro {
+	background-image:
+		linear-gradient(
+			var(--hy-off-white-translucent) 0%,
+			var(--hy-off-white-translucent) 100%
+		),
+		url("/central-market.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#spacer {
+	display: none;
+}
+
+#intro > h1 {
+	margin: 0 10%;
+    font-size: 40px;
+}
+
+#bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 40vh;
+	margin: 0 10%;
+}
+
+#bottom > #buttons {
+	width: 100%;
+	max-width: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#bottom > #buttons > button {
+	flex: 1;
+}
+
+#bottom > #buttons > button:last-child {
+	margin-left: 10px;
+}
+
+#bottom > .mission_button {
+	display: none;
+}
+
+#bottom > p {
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+	line-height: 25px;
+	text-align: right;
+}
+
+#bottom > p > span > a {
+	font-size: 15px;
+	color: var(--hy-blue);
+}
+
+@media (max-width: 800px) {
+	.mobile_spacer {
+		display: block;
+		flex: 1;
+	}
+
+	#intro > h1 {
+		text-align: center;
+	}
+
+	#bottom {
+		flex-direction: column-reverse;
+		padding: 15px 0 25% 0;
+		flex: 2;
+	}
+
+	#bottom > .mission_button {
+		display: block;
+		margin-bottom: 10px;
+		width: 100%;
+		max-width: 300px;
+	}
+
+	#bottom > p {
+		text-align: center;
+	}
+
+	#bottom > p > span:last-child {
+		display: none;
+	}
+}
