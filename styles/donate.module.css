@@ -1,0 +1,177 @@
+#intro {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#intro > h1 {
+	display: block;
+	font-size: 40px;
+}
+
+#intro > h2 {
+	display: none;
+	font-size: 40px;
+}
+
+#intro > p {
+	padding: 20px;
+	text-align: center;
+}
+
+#columnContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: relative;
+	padding-bottom: 10vh;
+}
+
+#columnContainer > div {
+	width: 50%;
+	height: 100%;
+	padding: 20px;
+}
+
+#card {
+	position: relative;
+	border-radius: 10px;
+	background: var(--hy-blue);
+	overflow: hidden;
+	margin: auto;
+	width: 40vw;
+	height: 23vw;
+}
+
+#card > svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 110%;
+	fill: var(--hy-blue-2);
+}
+
+@media (max-width:800px) {
+	#intro > h1 {
+		display: none;
+	}
+
+	#intro > h2 {
+		display: block;
+	}
+
+	#columnContainer {
+		flex-direction: column-reverse;
+	}
+
+	#columnContainer > div {
+		width: 100%;
+		height: 50%;
+	}
+
+	#card {
+		width: 90vw;
+		height: 50vw;
+	}
+}
+
+#card > .inputContainer {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 1;
+	color: var(--hy-off-white);
+}
+
+#card > .inputContainer > input {
+	background: none;
+	border-bottom: 2px dashed var(--hy-off-white);
+	width: 100%;
+	height: 20px;
+	font-family: monospace;
+	letter-spacing: 0.1em;
+	height: 4vmin;
+    line-height: 4vmin;
+	text-transform: uppercase;
+}
+
+#card > .inputContainer > label {
+	font-size: 10px;
+	font-family: monospace;
+	text-transform: uppercase;
+}
+
+#cvcContainer {
+	top: 10px;
+	right: 10px;
+	align-items: flex-end;
+}
+
+#expiryContainer {
+	bottom: 30px;
+	right: 10px;
+	align-items: flex-end;
+}
+
+#cardholderContainer {
+	bottom: 30px;
+	left: 10px;
+	align-items: flex-start;
+}
+
+#cardnumberContainer {
+	top: 50%;
+	left: 10px;
+	align-items: flex-start;
+	width: 80%;
+}
+
+#cardnumber {
+	font-size: 3vmin;
+}
+
+#right > div, #right > div > div {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+#right > div {
+	padding: 20px;
+}
+
+#buttons > * {
+	width: 49%;
+}
+
+#regChoice > label {
+	cursor: pointer;
+}
+
+#regChoice input, #amount input {
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+#spacer {
+	height: 2px;
+	border-bottom: 2px solid var(--hy-mid-gray);
+	opacity: 0.3;
+}
+
+#amount {
+	flex-direction: column;
+}
+
+.submit {
+	position: absolute;
+	bottom: calc(5vh - 20px);
+	right: calc(5vh - 20px);
+}

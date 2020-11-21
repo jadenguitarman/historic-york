@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from '../styles/picture.module.css';
 
 /* use like this:
 	<Picture
@@ -23,7 +24,7 @@ class Picture extends Component {
 
 		if (this.props.loading == "eager") {
 			this.ref.current.appendChild(img);
-			this.ref.current.addAttribute("data-loaded");
+			this.ref.current.setAttribute("data-loaded", "loaded");
 		} else {
 			(new IntersectionObserver(entries => {
 				entries.forEach(entry => {
@@ -41,7 +42,7 @@ class Picture extends Component {
 
 	render () {
 		return (
-			<picture className={this.props.className} ref={this.ref}>
+			<picture className={`${this.props.className} ${styles.picture}`} ref={this.ref}>
 				<source srcset={this.props.optimized}></source>
 				{ /* only add <img> when we scroll towards it */ }
 			</picture>
