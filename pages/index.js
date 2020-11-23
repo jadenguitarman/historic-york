@@ -16,16 +16,16 @@ const Index = () => {
 					<div id={styles.buttons}>
 						<Button
 							text="Donate"
-							callback={() => location.href = "/donate"}
+							onClick={() => location.href = "/donate"}
 							filled />
 						<Button
 							text="Events"
-							callback={() => location.href = "/events"} />
+							onClick={() => location.href = "/events"} />
 					</div>
 
 					<Button
 						text="Our Mission"
-						callback={() => location.href = "/about"}
+						onClick={() => location.href = "/about"}
 						className={styles.mission_button} />
 
 					<div className={styles.mobile_spacer}></div>

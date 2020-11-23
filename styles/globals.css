@@ -39,3 +39,36 @@ h1, h2, h3, h4, h5, h6, button, input, label, .autodidact {
 	font-family: "Autodidact";
 	letter-spacing: 0.05em;
 }
+
+input[type=radio], input[type=checkbox] {
+	appearance: unset;
+    border-radius: 3px;
+    width: 1em;
+    height: 1em;
+    background: #fff;
+    border: 2px solid var(--hy-mid-gray);
+	position: relative;
+}
+
+input[type=radio]:checked, input[type=checkbox]:checked {
+	box-shadow: 5px -5px 3em 0.3em #333;
+	background: var(--hy-mid-gray);
+}
+
+input[type=radio]:checked::after, input[type=checkbox]:checked::after {
+	background: var(--hy-pear);
+	content: "";
+	transition-property: clip-path;
+	transition-duration: 1s;
+	transition-delay: -0.5s;
+	clip-path: polygon(0% 0%, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 50%);
+}
+
+input[type=radio]:checked::after, input[type=checkbox]:checked::after {
+	clip-path: polygon(40% 80%, 20% 50%, 0% 50%, 35% 100%, 50% 100%, 100% 0%, 80% 0%);
+	position: absolute;
+	bottom: -20%;
+	right: -70%;
+    width: 230%;
+    height: 250%;
+}

@@ -175,3 +175,7 @@
 	bottom: calc(5vh - 20px);
 	right: calc(5vh - 20px);
 }
+
+#donateForm {
+	display: none;
+}

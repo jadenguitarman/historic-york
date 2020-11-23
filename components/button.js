@@ -1,6 +1,6 @@
 import styles from "../styles/button.module.css";
 
-const Button = ({text, callback, filled, className}) => {
+const Button = ({text, onClick, filled, className}) => {
 	return (
 		<button
 			className={`
@@ -8,7 +8,7 @@ const Button = ({text, callback, filled, className}) => {
 				${filled ? styles.filled : ""}
 				${className}
 			`}
-			onClick={callback}
+			onClick={onClick}
 		>{text}</button>
 	);
 };
