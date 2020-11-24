@@ -32,7 +32,13 @@ const Contact = () => {
 				<div>
 					<h2>Or, get in touch with the form below.</h2>
 
-					<form name="contact" id={styles.form} data-netlify="true" action="/" method="POST">
+					<form
+						name="contact"
+						id={styles.form}
+						data-netlify="true"
+						action="/"
+						method="POST"
+						netlify-honeypot="bot-field">
 						<div>
 							<input
 								type="text"
@@ -48,6 +54,8 @@ const Contact = () => {
 							<h3>Your Message</h3>
 							<textarea name="message"></textarea>
 						</div>
+
+						<input name="bot-field" />
 					</form>
 
 					<Button
