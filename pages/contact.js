@@ -33,11 +33,6 @@ const Contact = () => {
 					<h2>Or, get in touch with the form below.</h2>
 
 					<form id={styles.form} netlify action="/">
-						<input
-							type="hidden"
-							name="form-name"
-							name="Contact" />
-
 						<div>
 							<input
 								type="text"
