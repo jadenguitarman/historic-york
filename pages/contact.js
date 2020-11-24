@@ -60,7 +60,16 @@ const Contact = () => {
 
 					<Button
 						text="Send Message"
-						onClick={() => {document.getElementById(styles.form).submit()}}
+						onClick={() => {
+							let xhttp = new XMLHttpRequest();
+							xhttp.open('POST', "/", true);
+							xhttp.onreadystatechange = resp => {
+								if (xhttp.readyState === XMLHttpRequest.DONE && xhttp.status === 200) {
+									location.href = "/thank-you";
+								}
+							};
+							xhttp.send(new FormData(document.getElementById(styles.form)));
+						}}
 						filled />
 				</div>
 

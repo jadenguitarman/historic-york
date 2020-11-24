@@ -1,0 +1,50 @@
+#intro h1 {
+	font-size: 7vh;
+    text-align: center;
+	margin: 40px;
+}
+
+#intro > p {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#grid {
+	display: grid;
+    grid-template-rows: repeat(auto-fill, calc(100vw / 3 - 40px));
+    grid-template-columns: repeat(auto-fill, calc(100vw / 3 - 40px));
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+
+@media (max-width: 800px) {
+	#grid {
+		grid-template-rows: repeat(auto-fill, 60vh);
+		grid-template-columns: repeat(auto-fill, 95vw);
+	}
+}
+
+.imageContainer {
+	position: relative;
+}
+
+.imageContainer > picture, .imageContainer > picture > img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.imageContainer > span {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4em;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--hy-off-white);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.6);
+}

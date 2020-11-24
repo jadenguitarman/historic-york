@@ -16,8 +16,9 @@
 
 @font-face {
 	font-family: "Raleway";
-	src: url("https://historic-york.baptista.dev/Raleway_Regular.woff") format("woff");
+	src: url("https://use.typekit.net/af/8e698b/00000000000000003b9b13b3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff");
 	font-display: swap;
+	/* hosted on adobe */
 }
 
 * {

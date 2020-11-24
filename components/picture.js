@@ -42,8 +42,8 @@ class Picture extends Component {
 
 	render () {
 		return (
-			<picture className={`${this.props.className} ${styles.picture}`} ref={this.ref}>
-				<source srcset={this.props.optimized}></source>
+			<picture className={`${this.props.className || ""} ${styles.picture}`} ref={this.ref}>
+				<source srcSet={this.props.optimized}></source>
 				{ /* only add <img> when we scroll towards it */ }
 			</picture>
 		);

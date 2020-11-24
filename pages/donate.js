@@ -2,7 +2,6 @@ import styles from '../styles/donate.module.css';
 import React, { Component } from 'react';
 import Button from "../components/button.js";
 import Nav from "../components/nav.js";
-import Picture from "../components/picture.js";
 
 class Donate extends Component {
 	constructor (props) {
