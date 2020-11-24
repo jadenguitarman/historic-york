@@ -32,7 +32,7 @@ const Contact = () => {
 				<div>
 					<h2>Or, get in touch with the form below.</h2>
 
-					<form id={styles.form} netlify action="/">
+					<form id={styles.form} netlify action="/" method="POST">
 						<div>
 							<input
 								type="text"
