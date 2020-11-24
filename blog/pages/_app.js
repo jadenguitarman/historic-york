@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default withTina(MyApp, {
-	enabled: true,
-	sidebar: true,
+	enabled: false,
+	sidebar: false,
 	plugins: [MarkdownFieldPlugin],
 })
