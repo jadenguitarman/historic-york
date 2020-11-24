@@ -20,6 +20,10 @@ export default function Alert({ preview }) {
 						className="no-underline p-2"
 					>About</a>
 					<a
+						href="https://historic-york.baptista.dev/contact"
+						className="no-underline p-2"
+					>Contact</a>
+					<a
 						href="https://blog.historic-york.baptista.dev"
 						className="no-underline p-2"
 					>Blog</a>

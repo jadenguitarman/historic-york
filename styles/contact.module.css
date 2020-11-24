@@ -1,0 +1,101 @@
+#intro > h1 {
+	text-align: center;
+	font-size: 6vh;
+	margin: 40px;
+}
+
+#intro > p {
+	text-align: center;
+	margin: 40px;
+}
+
+.contactInfo {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	margin: 40px 0;
+}
+
+.contactInfo > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	width: 30%;
+}
+
+@media (max-width:800px) {
+	.contactInfo {
+		flex-direction: column;
+	}
+
+	.contactInfo > div {
+		width: 100%;
+		padding: 30px;
+	}
+}
+
+.board {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+.board > p {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+#intro h2 {
+	text-align: center;
+	margin: 40px;
+}
+
+#form {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 30vh;
+}
+
+#form > div {
+	height: 100%;
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#form input[type=text] {
+	width: 100%;
+	font-size: 20px;
+	line-height: 30px;
+	padding: 0;
+	border: 2px solid var(--hy-mid-gray);
+	border-radius: 5px;
+	margin: 0;
+}
+
+#form h3 {
+	font-size: 20px;
+}
+
+#form textarea {
+	width: 100%;
+	height: calc(100% - 30px);
+	border: 2px solid var(--hy-mid-gray);
+	border-radius: 5px;
+	resize: none;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: 'Raleway';
+	padding: 5px;
+}
+
+#form + button {
+	width: 80%;
+	margin: 0 10%;
+}

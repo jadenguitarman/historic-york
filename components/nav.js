@@ -3,7 +3,6 @@ import Logo from "../components/logo.js";
 
 const openNav = e => {
 	document.getElementById(styles.nav).children[0].classList.add(styles.hidden);
-	e.target.parentNode.classList.add(styles.open);
 };
 
 const Nav = () => {
@@ -32,6 +31,7 @@ const Nav = () => {
 				<a href="/">Home</a>
 				<a href="/about">About</a>
 				<a href="/donate">Donate</a>
+				<a href="/contact">Contact</a>
 				<a href="https://blog.historic-york.baptista.dev">Blog</a>
 			</nav>
 		</div>

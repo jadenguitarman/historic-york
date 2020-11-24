@@ -6,6 +6,7 @@
 	height: 10vh;
 	position: relative;
 	width: 100%;
+	overflow-x: hidden;
 }
 
 #nav > svg {
@@ -35,11 +36,11 @@
 		width: 100vw;
 	}
 
-	#nav > nav.open {
+	#nav > svg.hidden ~ nav {
 		left: 0;
 	}
 
-	#nav > nav.open > svg {
+	#nav > svg.hidden ~ nav > svg {
 		display: none;
 	}
 }
@@ -54,7 +55,7 @@
 }
 
 #nav > nav > a {
-	font-family: "Raleway";
     text-decoration: none;
 	text-transform: uppercase;
+	font-size: 0.9em;
 }
