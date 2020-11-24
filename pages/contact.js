@@ -60,15 +60,13 @@ const Contact = () => {
 
 					<Button
 						text="Send Message"
-						onClick={() => {
-							let xhttp = new XMLHttpRequest();
-							xhttp.open('POST', "/", true);
-							xhttp.onreadystatechange = resp => {
-								if (xhttp.readyState === XMLHttpRequest.DONE && xhttp.status === 200) {
-									location.href = "/thank-you";
-								}
-							};
-							xhttp.send(new FormData(document.getElementById(styles.form)));
+						onClick={async () => {
+							await fetch('/', {
+								method: 'POST',
+								headers: { "Content-Type": "application/x-www-form-urlencoded" },
+								body: new URLSearchParams(new FormData(document.getElementById(styles.form))).toString()
+							});
+							location.href = "/thank-you";
 						}}
 						filled />
 				</div>
