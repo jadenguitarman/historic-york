@@ -19,8 +19,8 @@ const Index = () => {
 							onClick={() => location.href = "/donate"}
 							filled />
 						<Button
-							text="Events"
-							onClick={() => location.href = "/events"} />
+							text="Contact"
+							onClick={() => location.href = "/contact"} />
 					</div>
 
 					<Button
